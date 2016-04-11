@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*:::: Natural Box Layout ::::*/
+html{
+	box-sizing: border-box;	
+}
+*,*:before, after{
+	box-sizing: inherit;	
+}
+
+/*:: General Style ::*/
+body{
+	margin:0;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size:16px;	
+}
+
+/*avoid page break due to float(later)*/
+.clear{
+	clear:both;
+}
+
+/*provide a bg color to sections in webpg home - header, footer and to remove spacing set margin 0 for headings, unordered list and paragraphs - find images*/
+header{
+	/*background-color:yellow;*/
+	height:740px;
+	/* height:560px; */
+}
+
+/*for about and contact too*/
+h1,h2,ul,p{
+	margin:0;
+}
+
+/*about, contact*/
+section{
+	background-color:green;
+}
+
+footer{
+	background-color:olive;
+	height:40px;
+}
+
+/*home(later) */
+header .blocks{
+	width:50%;
+	height:740px;
+	/* height:560px; */
+	float:left;
+	background:url(../images/homebg.jpg) no-repeat;
+	background-size:cover;
+}
+header .homeHeading, header .homeSHeading{
+	color:white;
+	width:400px;
+	text-align:center;
+	margin:auto;
+}
+
+header .homeHeading{
+	font-size:56px;
+	margin-top:250px;
+}
+
+header .homeSHeading{
+	font-size:30px;
+}
+/*effects about and contact */
+nav{
+	height:740px;
+	/* height:560px; */
+	width:50%;
+    float:right;	
+}
+/*home nav list*/
+nav #menuIcon{
+	width:25%;
+	margin:auto;
+	margin-top:170px;
+	font-size:32px;
+	text-align:center;
+	color:darkgreen;
+	font-weight:bold;
+	border:1px solid darkgreen;
+}
+
+nav #homeList {
+	list-style-type:none;
+	margin-top:20px;
+	margin-left:10px;
+}
+
+nav #homeList li{
+	width:20%;
+	margin-left:210px;
+	margin-top:25px;
+}
+
+nav #homeList li a{
+	color:darkgreen;
+	text-decoration:none;
+	font-family:'Droid-Sans',verdana, sans-serif;
+	font-size:24px;
+	padding-right:25px;
+	padding-left:36px;
+	padding-top:5px;
+	padding-bottom:5px;
+	cursor:pointer;
+}
+
+nav #homeList li a:hover{
+	color:beige;
+	background-color:darkgreen;
+	border-radius:5px;
+}
+  #aboutHeader{
+		width:25%;	
+        background:url(../images/homebg.jpg) no-repeat;
+		background-size:cover;
+		float:left;
+		
+	}
+	header .blocksB{
+	/*width:22%;*/
+	width:100%;
+	/*height:100px;*/
+    /*height:655px;*/
+	background-color:olive;
+	opacity:0.9;
+	color:white;
+	padding:10px;
+	position:relative;
+
+	}
+	#aboutNav{
+		width:100%;
+		height:655px;
+		background-color:black;
+		opacity:0.8;
+		
+		margin:0;	
+		position:absolute;
+		left:0;
+	}
+
+
+		#aboutList{
+			list-style-type:none;	
+			/*width:50%;
+			max-width:250px;*/
+		margin-left:50px;
+		margin-top:250px;
+		}
+		#aboutList li{
+			margin:18px;
+			padding:2px 0px;
+		}
+		#aboutList li a{
+			text-decoration:none;
+			text-align:left;	
+			color:white;
+			font-size:20px;
+			letter-spacing:2px;
+			padding:2px 70px 2px 15px;
+			font-family:'Droid-Sans',verdana,sans-serif;
+		}
+		li#aboutpg a{
+			background-color:darkgreen;
+			font-weight:bold;
+			border-radius:5px;	
+			color:beige;
+		}
+		
+		section#aboutSect{
+			/*background-color:white;*/
+			width:75%;
+			float:right;
+			height:740px;
+			background:url('../images/profile.jpg') no-repeat fixed;
+			opacity:0.8;
+			background-size:cover;
+			background-position:50%;
+		}
+		
+		article{
+			background-color:black;
+			opacity:0.8;
+			width:35%;
+			border-radius:0 5% 5% 0;
+			
+		}
+		article > p{
+			color:yellow;
+			margin:10px;
+			font-size:16px;
+			font-family:'Droid-Sans',verdana,sans-serif;
+			line-height:1.3;
+		}
+		article > h2{
+			color:yellow;
+			padding:30px;
+			padding-left:20px;
+		}
+
+/*footer home social list and paragraph*/
+footer p{
+	width:70%;
+	font-size:14px;
+	float:left;
+	color:white;
+	margin-left:10px;
+	margin-top:12px;
+	font-family:'Droid-Sans',verdana, sans-serif;
+}
+footer #social{
+	list-style-type:none;
+	width:15%;
+	float:right;
+	margin-left:50px;
+}
+footer #social li{
+	display:inline-block;
+}
+footer #social i{
+	color:white;
+	margin-left:4px;
+	margin-top:12px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+	<meta charset = "utf-8">
+	<meta http-equiv = "Content-Type" content = "text/html;charset = utf-8">
+	
+    <title>Contact</title>
+    <!-- icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href = "style/style.css" rel = "stylesheet" type = "text/css"/>
+    
+        <!--Arrange stylesheet later into css-->
+    <style type = "text/css">
+ 
+		
+		form{
+			width:55%;
+			margin:10px auto 40px auto;	
+			padding:20px;
+		}
+		input,form > h3{
+			font-family:'Droid-Sans',verdana,sans-serif;
+			color:darkgreen;	
+			font-weight:normal;
+		}
+		input,textarea{
+			background-color:beige;	
+			border-radius:5px;
+			padding:4px;
+			font-size:16px;
+			line-height:1.3;
+		}
+		textarea{
+			padding:2px;	
+		}
+	
+	</style>
+ </head>
+ 
+ <!--### @shaistha kallil - shaistha @ shaikallil.info ###-->
+ <!-- ### Jan 12, 2016 ###  -->
+ <!-- multipage website contact -->
+ <body>
+   
+    <header id="aboutHeader">
+       <div class= "blocksB">
+		<h1>John Smith</h1>
+		<h2>Web Developer</h2>
+		
+		<nav id="aboutNav">
+			<ul id="aboutList">
+				<li><a href="multihome.html">HOME</a></li>
+				<li><a href="multiabout.html">ABOUT</a></li>
+				<li id="aboutpg"><a href="multicontact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+       </div>
+	</header>
+	
+	<section id="aboutSect">
+    	<h2>Contact Form</h2>
+		<form action="mailto:shaistha@shaikallil.info" method="post" enctype="text/plain" name="contact">
+        	<h3>Your Name:
+            	<input name="name" type="text" size="32"/>
+            </h3>
+            
+            <h3>Your Email:
+            	<input name="email" type="email" size="40"/>
+            </h3>
+            
+            <h3>Comments:</h3>
+            <p><textarea name="Comments" cols="60" rows="6"></textarea></p>
+            
+            <h3>
+            	<input name="mailingList" type="checkbox" size="32"/>Add Me To Your Mailing List
+            </h3>
+            
+            <h3> How did you find us ?
+            	<select name="survey">
+                	<option value = "searchEngine">Search Engine</option>
+                    <option value = "wordMouth">Word of mouth</option>
+                    <option value = "socialMedia">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+            </h3>
+            
+            <input type = "submit" value = "Click here to submit form"/>
+            <input type = "reset" value = "Click here to reset form"/>
+			
+		</form>
+	</section>
+	
+        <div class = "clear"></div>
+	<footer>
+		<p>&copy; JohnBuilder 2016 All Rights Reserved</p>
+        
+        		
+		<ul id = "social">
+			<li><a href="#"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
+		</ul>
+		<!-- Removes the page break caused by float(later) -->
+	  <div class="clear"></div>
+	</footer>
+ 
+ </body>
+</html>
